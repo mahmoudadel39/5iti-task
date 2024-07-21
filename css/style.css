@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    gap: 25px 25px;
+   grid-template-areas: 
+   "header header header header"
+   "aside artical artical artical"
+   "aside artical artical artical"
+   "aside artical artical artical"
+   "aside artical artical artical"
+   "aside artical artical artical"
+   "footer footer footer footer"
+   
+
+   ;
+    background-color: rgb(222, 255, 255);
+    font-size: 25px;
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+}
+.child{
+    padding: 15px;
+}
+.header{
+background-color: #03BFB1;
+grid-area: header;
+
+
+}
+.artical{
+    background-color: #FBB04B;
+   grid-area: artical;
+    
+    justify-content: center;
+    align-content: end;
+    
+}
+.aside{
+    grid-area: aside;
+    background-color: #6EDB6E;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+.footer{
+    grid-area: footer;
+    background-color: #03BFB1;
+   
+}
+.imgs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 20px;
+    
+    
+}
+.img{
+    padding: 60px 1px;
+    background-color: #FCD24A;
+
+}
